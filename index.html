@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="cantainer">
+        <div class="logo">ReS-CalsU</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#Calculator">Calculator</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="screen-body-item" id="Calculator">
+        <div class="student">STUDENT GRADE</div>
+        <div class="app-form">
+            <div class="app-form-group">
+                <input type="text" class="app-form-control" placeholder="HINDI" id="hind">
+            </div>
+            <div class="app-form-group">
+                <input type="text" class="app-form-control" placeholder="MATH" id="maths">
+            </div>
+            <div class="app-form-group">
+                <input type="text" class="app-form-control" placeholder="ENGLISH" id="eng">
+            </div>
+            <div class="app-form-group">
+                <input type="text" class="app-form-control" placeholder="SOCIAL" id="soc">
+            </div>
+            <div class="app-form-group">
+                <input type="text" class="app-form-control" placeholder="ART" id="arts">
+            </div>
+            <div>
+                <input type="button" name="" value="showPercntage" class="app-form-button" onclick="calcy()">
+            </div>
+            <div class="app-form-group showdata">
+                <p id="showData"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+.cantainer{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: #74F2CE;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    color: #E58C8A;
+    font-size: 22px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}
+.nav ul li a:hover{
+    padding: 5px;
+    border: 1px solid white;
+    transition: 0.6s ease;
+    color: white;
+}
+.cantainer .menu-btn{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    margin-right: -50%;
+}
+#click{
+    display: none;
+}
+
+.screen-body-item{
+    background-color: #83EAF1;
+    width: 100%;
+    height: 100vh;
+}
+.student{
+    color: white;
+    font-size: 22px;
+    top: 25%;
+    z-index: 99;
+    left: -11%;
+    position: relative;
+    text-align: center;
+}
+.app-form{
+    width: 50%;
+    height: 300px;
+    background-color: rgb(37, 36, 36);
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px;  
+    margin-left: 25%;
+    top: 10%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+.app-form-group{
+    padding: 5px;
+}
+.app-form-control{
+    color: white;
+    margin-left: 50%;
+    background-color: rgb(37, 36, 36);
+    font-size: 14px;
+    border: white;
+    /* border: rgb(37, 36, 36); */
+    padding: 5px;
+
+}
+.app-form-button{
+    background-color: rgb(37, 36, 36);
+    border: white;
+    cursor: pointer;
+    padding: 20px;
+    color: white;
+}
+#showData{
+    color: white;
+}
+
+@media  (max-width: 868px){
+    .cantainer{
+        background-color: #20BF55;
+    }
+     .nav ul a{
+        font-size: 22px;
+    }
+    /*
+    .nav ul li{
+        padding: 10px;
+    } */
+
+    .app-form{
+        width: 70%;
+        height: 300px;
+        margin-left: 15%;
+    }
+    .student{
+        margin-left: -14%;
+        font-size: 32px;
+    }
+    .app-form-button{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px){
+    .cantainer .menu-btn{
+        display: block;
+        line-height: 80px;
+    }
+    .logo{
+        color: #B91372;
+        font-weight: bold;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+    .nav ul{
+        position: fixed;
+        top: 88px;
+        left: -100%;
+        background-color: #7EE8FA;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        text-align: center;
+        transition: 0.6s ease;
+        z-index: 99;
+    }
+    #click:checked ~ .nav ul{
+        left: 0%;
+    }
+/* .nav ul li{
+
+}
+.nav ul li a{
+    font-size: 20px;
+    display: block;
+} */
+
+.app-form{
+    width: 80%;
+    height: 400px;
+    margin-left: 10%;
+}
+.student{
+    margin-left: -14%;
+    font-size: 32px;
+}
+.app-form-group{
+    padding: 10px;
+}
+.app-form-button{
+    font-size: 32px;
+}
+}
+@media (max-width: 498px){
+
+.app-form{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+.student{
+    margin-left: -22%;
+    font-size: 14px;
+}
+.app-form-group{
+    padding: 10px;
+}
+.app-form-button{
+    font-size: 32px;
+}
+}
+@media (max-width: 380px){
+    .app-form{
+        width: 100%;
+        height: auto;
+        margin-left: -2%;
+    }
+    .student{
+        margin-left: -32%;
+        font-size: 14px;
+    }
+}
